@@ -44,4 +44,10 @@ void TIM_SetCCR(TIM_TypeDef *TIMx, uint32_t CHx, uint16_t CCR)
 void TIM3_IRQProcess(void)
 {
     LED0_Toggle;    // LED0 取反
+
+    // TIM_SetCCR(TIM3, TIM_CHANNEL_1, 1500);      // TIM3_CH1 --> PA6
+    // TIM3->CCR1 = 1500;
+
+    // RX: PA_10,  TX: PA_9
+    UART1_printf_DMA("$GPRMC,004015,A,2812.0498,N,11313.1361,E,0.0,180.0,150122,3.9,W,A* \r\n");
 }
