@@ -55,6 +55,7 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     ${CMAKE_SOURCE_DIR}/BSP/LED/led.c
     ${CMAKE_SOURCE_DIR}/BSP/UART/uart_1.c
     ${CMAKE_SOURCE_DIR}/BSP/TIMER/timer.c
+    ${CMAKE_SOURCE_DIR}/BSP/PPS/pps.c
     # Add user sources here
 )
 
@@ -63,6 +64,7 @@ target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     ${CMAKE_SOURCE_DIR}/BSP/LED
     ${CMAKE_SOURCE_DIR}/BSP/UART
     ${CMAKE_SOURCE_DIR}/BSP/TIMER
+    ${CMAKE_SOURCE_DIR}/BSP/PPS
     # Add user defined include paths
 )
 
